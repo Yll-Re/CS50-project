@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evolve Idle Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+<div class="top-bar">
+    <h2 id="epochTitle" class="title">Prehistoric</h2>
+</div>
+<div class="container">
+  <div class="left-panel">
+    <div class="stats">
+      <p>RNA: <span id="rnaDisplay">0</span> / <span id="rnaMAX">100</span><span class="PerSecond" id="rnaPS">0/s</span></p>
+      <p>DNA: <span id="dnaDisplay">0</span> / <span id="dnaMAX">100</span><span class="PerSecond" id="dnaPS">0/s</span></p>
+    </div>
+    
+  </div>
+  <div class="middle-panel">
+    <div class="prehistoricDiv">
+      <div class="buttonContainer">
+        <button id="rnaButton" class="defualtButton">RNA
+          <span class="tooltipText">Creats 2 RNA</span>
+        </button>
+        <button id="dnaButton" class="defualtButton">Form DNA
+          <span class="tooltipText">Turn 2 RNA for 1 DNA</span>
+        </button>
+        <button id="membraneButton" class="defualtButton">Membrane
+          <span class="tooltipText" id="membraneTooltip">Increase RNA capacity by 5 || Costs 2 RNA</span>
+        </button>
+        <button id="OrganellesButton" class="defualtButton">Organelles
+          <span class="tooltipText">Automatically generate 1 RNA || Costs 12 RNA, 4 DNA</span>
+        </button>
+        <button id="NucleusButton" class="defualtButton">Nucleus
+          <span class="tooltipText">Automatically consume 2 RNA to create 1 DNA || Costs 38 RNA, 18 DNA</span>
+        </button>
+        <button id="EukaryoticButton" class="defualtButton">Eukaryotic Cell
+          <span class="tooltipText" id="EukaryoticTooltip">Increase DNA capacity by 10 || Costs 46 RNA, 26 DNA</span>
+        </button>
+        <button id="MitochondriaButton" class="defualtButton">Mitochondria
+          <span class="tooltipText">Increase the effect of Membrane and Eukaryotic cells || Costs 75 RNA, 65 DNA</span>
+        </button>
+        <button id="ReproductionButton" class="defualtButton">Reproduction
+          <span class="tooltipText">Increase RNA generation from Organelles || Costs 150 DNA</span>
+        </button>
+        <button id="PhagocytosisButton" class="defualtButton">Phagocytosis
+          <span class="tooltipText">Evolve in the direction of the animal kingdom || Costs 175 DNA</span>
+        </button>
+        <button id="MulticellularButton" class="defualtButton">Multicellular
+          <span class="tooltipText">Increase DNA generation || Costs 200 DNA</span>
+        </button>
+        <button id="BilateralSymmetryButton" class="defualtButton">Bilateral Symmetr
+          <span class="tooltipText">Increase Eukaryotic cell efficency || Costs 230 DNA</span>
+        </button>
+        <button id="Mammals" class="defualtButton">Mammals
+          <span class="tooltipText">Evolve in the direction of a Mammal || Costs 250 DNA</span>
+        </button>
+      </div>
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+  </div>
+  <div class="right-panel">
+    <div class="messages">
+        <p>Message log:</p>
+        <ul id="messageLog">
+          
+        </ul>
+      </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
